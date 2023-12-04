@@ -15,8 +15,8 @@ sysusers()
 {
 	whoami
 }
- input = 1
-while [ $choice != 0 ]
+input = 1
+while [ $choice -ne 0 ]
 do
     
     echo "1.Display the current date and time"
@@ -25,7 +25,7 @@ do
     echo "Enter 0 to Quit"
     echo "Input:"
     read -r choice
-    case $choice in
+    case $input in
         1)
             datee 
             ;;
