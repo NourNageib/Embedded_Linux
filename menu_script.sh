@@ -3,7 +3,13 @@ echo "Welcome Program"
 datee()
 {
 
-	date  
+		now="$(date)"
+	printf "Current date and time %s\n" "$now"
+	 
+	now="$(date +'%d/%m/%Y')"
+	printf "Current date in dd/mm/yyyy format %s\n" "$now"
+	 
+	echo "Starting backup at $now, please wait..."  
 }
 
 uptime()
@@ -15,8 +21,11 @@ sysusers()
 {
 	whoami
 }
-input = 1
-while [ $choice -ne 0 ]
+
+
+
+
+while true ;
 do
     
     echo "1.Display the current date and time"
@@ -24,8 +33,8 @@ do
     echo "3. Display system loggedin users"
     echo "Enter 0 to Quit"
     echo "Input:"
-    read -r choice
-    case $input in
+    read -r input_choice
+    case $input_choice in
         1)
             datee 
             ;;
@@ -38,7 +47,8 @@ do
             ;;
         0)
             echo "Exit Good bye!"
-            ;;
+            exit 0
+	    ;;
         *)
             echo "ERROR RETRY !"
             ;;
