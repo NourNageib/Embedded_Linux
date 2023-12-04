@@ -1,17 +1,17 @@
 #!/bin/bash
 echo "Welcome Program"
-showdate()
+datee()
 {
 
 	date  
 }
 
-showSysUptime()
+uptime()
 {
 
 	uptime
 }
-showCurrentUsers()
+sysusers()
 {
 	whoami
 }
@@ -27,14 +27,14 @@ do
     read -r choice
     case $choice in
         1)
-            showdate 
+            datee 
             ;;
         2)
-            showSysUptime 
+            uptime 
             ;;
         3)
             
-           showCurrentUsers 
+           sysusers 
             ;;
         0)
             echo "Exit Good bye!"
