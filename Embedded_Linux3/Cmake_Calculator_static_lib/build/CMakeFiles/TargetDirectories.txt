@@ -1,0 +1,4 @@
+/home/nour/Nour/Calculator_static_lib/build/CMakeFiles/APP.dir
+/home/nour/Nour/Calculator_static_lib/build/CMakeFiles/operations.dir
+/home/nour/Nour/Calculator_static_lib/build/CMakeFiles/edit_cache.dir
+/home/nour/Nour/Calculator_static_lib/build/CMakeFiles/rebuild_cache.dir

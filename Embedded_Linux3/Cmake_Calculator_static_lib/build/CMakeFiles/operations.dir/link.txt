@@ -1,0 +1,2 @@
+/usr/bin/ar qc liboperations.a CMakeFiles/operations.dir/Lib/add.c.o CMakeFiles/operations.dir/Lib/divide.c.o CMakeFiles/operations.dir/Lib/modulus.c.o CMakeFiles/operations.dir/Lib/multiply.c.o CMakeFiles/operations.dir/Lib/subtract.c.o
+/usr/bin/ranlib liboperations.a

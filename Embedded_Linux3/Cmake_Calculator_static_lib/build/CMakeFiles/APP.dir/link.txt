@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/APP.dir/main.c.o -o APP  liboperations.a 
