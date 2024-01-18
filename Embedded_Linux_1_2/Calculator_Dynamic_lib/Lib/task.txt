@@ -1,0 +1,17 @@
+152  mkdir
+  153  mkdir Calculator_Dynamic_lib
+  154  cd Calculator_Dynamic_lib
+  155  touch Include
+  156  touch Lib
+  157  clear
+  158  mkdir Lib Include
+  159  cd Include
+  160  touch add.c multiply.c divide.c modulus.c subtract.c
+  161  ls
+  162  gcc *.o -c 
+  163  gcc *.c -c 
+  164  rm *.o
+  165  gcc *.c -fpic
+  166  gcc -c *.c -fpic-> required to create a shared library
+  167  touch task.txt
+
