@@ -107,8 +107,6 @@ Then configure your compiler :
 ./ct-ng menuconfig
 ```
 ![Screenshot from 2024-01-05 01-05-27](https://github.com/NourNageib/Embedded_Linux/assets/151030617/6e47eccb-0b56-484b-bf8d-5435b553eea2)
-![Screenshot from 2024-01-05 01-19-06](https://github.com/NourNageib/Embedded_Linux/assets/151030617/ae8e24b2-bcd0-491f-9382-00828be8738a)
-![Screenshot from 2024-01-05 01-20-06](https://github.com/NourNageib/Embedded_Linux/assets/151030617/d9300c37-948b-4548-8f69-2b7cdc9039da)
 
 ![Screenshot from 2024-01-13 10-54-24](https://github.com/NourNageib/Embedded_Linux/assets/151030617/895214c0-b1f5-4c2a-897d-9e76b804c895)
 ![Screenshot from 2024-01-13 10-55-59](https://github.com/NourNageib/Embedded_Linux/assets/151030617/4f7ad7e0-111d-432c-8b64-8ea86213d8de)
