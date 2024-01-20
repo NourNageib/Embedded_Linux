@@ -8,6 +8,6 @@ set(SRC_FILE
 	 Lib/subtract.c 
  )
 add_executable(APP main.c)
-add_library(operations STATIC ${SRC_FILE})
+add_library(operations SHARED ${SRC_FILE})
 target_include_directories(APP PUBLIC Include)
 target_link_libraries(APP PUBLIC operations)

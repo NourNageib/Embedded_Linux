@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/APP.dir/main.c.o -o APP  -Wl,-rpath,/home/nour/Nour/New/Embedded_Linux/Embedded_Linux3/Cmake_Calculator_dynamic_lib/build liboperations.so 

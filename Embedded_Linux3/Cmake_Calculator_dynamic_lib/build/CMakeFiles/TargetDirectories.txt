@@ -1,0 +1,4 @@
+/home/nour/Nour/New/Embedded_Linux/Embedded_Linux3/Cmake_Calculator_dynamic_lib/build/CMakeFiles/APP.dir
+/home/nour/Nour/New/Embedded_Linux/Embedded_Linux3/Cmake_Calculator_dynamic_lib/build/CMakeFiles/operations.dir
+/home/nour/Nour/New/Embedded_Linux/Embedded_Linux3/Cmake_Calculator_dynamic_lib/build/CMakeFiles/edit_cache.dir
+/home/nour/Nour/New/Embedded_Linux/Embedded_Linux3/Cmake_Calculator_dynamic_lib/build/CMakeFiles/rebuild_cache.dir
