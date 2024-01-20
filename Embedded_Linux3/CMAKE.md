@@ -123,6 +123,7 @@ target_link_libraries(APP PUBLIC operations)
 ```
 
 NOW, CMakeLists.txt is ready.
+![Screenshot from 2024-01-20 13-42-33](https://github.com/NourNageib/Embedded_Linux/assets/151030617/ec0b4a7a-9a20-49e1-9d11-8cdfc862e775)
 
 ### Step 3 :
 
@@ -131,13 +132,30 @@ cd build/
 cmake .. 
 make 
 ```
+![Screenshot from 2024-01-18 18-43-17](https://github.com/NourNageib/Embedded_Linux/assets/151030617/32aff11c-8486-42b6-a860-709ac0fe50d4)
+
+![Screenshot from 2024-01-20 13-37-12](h![Uploading Screenshot from 2024-01-18 18-43-17.png…]()
+ttps://github.com/NourNageib/Embedded_Linux/assets/151030617/38390e3e-b000-43d2-9e60-c2133167ba12)
+![Screenshot from 2024-01-20 13-37-32](https://github.com/NourNageib/Embedded_Linux/assets/151030617/8a893152-f8d9-4287-8af0-65437b7d6867)
+
+**Output in build file :**
+
+* **Static :**
+
+![Screenshot from 2024-01-20 15-15-21](https://github.com/NourNageib/Embedded_Linux/assets/151030617/35c6c625-e851-481b-a0d0-d5718146375a)
+
+* **Dynamic :**
+
+![Screenshot from 2024-01-20 13-38-18](https://github.com/NourNageib/Embedded_Linux/assets/151030617/013b8767-af27-4163-81e1-b000e7f691f9)
 
 NOW , your application is ready to run : - ) 
 
 ```bash
 ./APP
 ```
+![Screenshot from 2024-01-18 18-31-09](https://github.com/NourNageib/Embedded_Linux/assets/151030617/2c7a77f8-cdcd-4d1c-b552-8d6746357fc5)
 
+![Screenshot from 2024-01-20 13-38-59](https://github.com/NourNageib/Embedded_Linux/assets/151030617/452db298-51c2-4450-8558-fa0f831b10ea)
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
