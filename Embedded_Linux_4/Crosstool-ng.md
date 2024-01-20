@@ -82,4 +82,30 @@ Now you are ready to build your TOOLCHAIN
  ./ct-ng build
 ```
 
-Now you have your toolchain. 
+**Now you have your toolchain.** : )
+
+You can repeat the same steps to download the arm cross-compiler 
+
+Choose arm architecture :
+
+```bash
+./ct-ng arm-cortexa9_neon-linux-gnueabihf
+```
+
+Then configure your compiler :
+
+```bash
+./ct-ng menuconfig
+```
+
+
+
+Now you are ready to build your TOOLCHAIN 
+
+```bash
+ ./ct-ng build
+```
+
+
+
+**Now you have your arm toolchain.** : )
