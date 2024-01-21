@@ -168,6 +168,8 @@ NOW , your application is ready to run : - )
 | **PUBLIC**  | **All the directories following `PUBLIC` will be used for the current target and the other targets that have dependencies on the current target**. |
 
 reference : https://leimao.github.io/blog/CMake-Public-Private-Interface/ 
+
+
 .
 ****************************************************** **THE END** ****************************************************
 
