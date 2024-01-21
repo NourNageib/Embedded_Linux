@@ -362,7 +362,7 @@ here functions are UND ? because, its dynamically linked it doesnot have a fixed
 In summary, the key distinction is that static libraries are linked at  compile time, resulting in standalone executables, while dynamic  libraries are linked at runtime, allowing for shared library  among  multiple executables. Each approach has its own advantages and  trade-offs, and the choice often depends on factors , application and system compatibility.
 
 
-******************************************** **THE END** ***************************************************************
+********************************************************* **THE END** ***************************************************************
 
 
 
