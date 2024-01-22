@@ -51,7 +51,11 @@ a - A window will open -> choose **dos** (DOS MBR partition).                   
 
 a - A window will open -> choose **dos** (DOS MBR partition).                                                                                                                                                                   b - Press -> **New**.                                                                                                                                                                                        c - Enter partition size "800MB"                                                                                                                                             d - Press -> **extended** (Partition used to install operating system and contain filesystem).                                                                                                                                                                                                                        e - press **Type** (Select prtition type ) -> **Linux**( Linux is ext4 ,inwhich ext4 is a file system method of organizing and                              storing files on a storage device ).                                                                                                                                                                        f - press **write**  -> **Quit**. 
 
+
 **Now you have your  -> sd,img  has 2 partitions (FAT 16 --- EXT4)** of total size 1GB.
+
+![Screenshot from 2024-01-21 19-02-01](https://github.com/NourNageib/Embedded_Linux/assets/151030617/bd0458a9-b544-417d-94b8-dd21b91f142d)
+
 
 To ensure your work is done successfully  use :
 
@@ -65,7 +69,10 @@ or
 parted sd.img print
 ```
 
+![Screenshot from 2024-01-21 19-06-31](https://github.com/NourNageib/Embedded_Linux/assets/151030617/cb07f305-1f56-4e44-b4c6-426cae929691)
 
+
+![Screenshot from 2024-01-22 18-46-48](https://github.com/NourNageib/Embedded_Linux/assets/151030617/977558ae-40fe-4e08-bfd6-4e302a884986)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -79,7 +86,8 @@ Thus, we use LOOP DEVICE as a virtual file system , which provides a level of ab
 
 #### Step 1 :
 
-```bash
+```bash![Uploading Screenshot from 2024-01-22 18-46-48.png…]()
+
 sudo losetup -f --show --partscan sd.img
 ```
 
@@ -95,6 +103,10 @@ sudo losetup -f --show --partscan sd.img
 ```bash
 export DISK=/dev/loop18
 ```
+
+![Screenshot from 2024-01-22 16-48-29](https://github.com/NourNageib/Embedded_Linux/assets/151030617/30fca07e-bb89-4473-994a-806f46542356)
+
+
 
 **Now you set loop device for the sd.img with its partitions so you can easily access each partition of the image with loop device individually.**
 
@@ -112,6 +124,7 @@ sudo mkfs.vfat -F 16 -n boot ${DISK}p1
 * -F 16          -> Specifies FAT type -> 16 bit .
 * -n boot       -> once the FAT16 file system is created  the it will be labeled with the name **boot** .
 * ${DISK}p1 -> identifies the partition to which the file system will be assigned.
+  
 
 Same for the second partition EXT4 (Fouth Extended ):
 
@@ -122,6 +135,8 @@ sudo mkfs.ext4 -L rootfs ${DISK}p2
 * mkfs.ext4  -> creating an EXT4 file system on my block device partition 2.
 * -L  rootfs    -> Flag set volume label to give name **rootfs** for  created EXT4 file system.
 * ${DISK}p2 -> identifies the partition to which the file system will be assigned.
-* 
 
-********************************************************************************************************************************************************************** **THE END*********************************************************************************************************************************************************************************************
+  ![Screenshot from 2024-01-22 16-49-24](https://github.com/NourNageib/Embedded_Linux/assets/151030617/a2d293e1-d4be-4cd2-9d8d-605330f8de8e)
+
+
+********************************************* **THE END**********************************************************
