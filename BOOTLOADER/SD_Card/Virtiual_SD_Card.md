@@ -43,6 +43,7 @@ cfdisk sd.img
 | FAT partition (the boot partition ) | 200 MB |
 | EXT4 partition (the RFS partition ) | 800 MB |
 
+
 <u>**Create the FAT partition :**</u>
 
 a - A window will open -> choose **dos** (DOS MBR partition).                                                                                                                                                                   b - Press -> **New**.                                                                                                                                                                                        c - Enter partition size "200MB"                                                                                                                                             d - Press -> **primary** (Partition used to install operating system and contain filesystem).                                                                        e - Enable **Bootable** option.                                                                                                                                                   f - press **Type** (Select prtition type ) -> **FAT16**.                                                                                                                      g - press **write**  -> **Quit**. 
@@ -139,4 +140,4 @@ sudo mkfs.ext4 -L rootfs ${DISK}p2
   ![Screenshot from 2024-01-22 16-49-24](https://github.com/NourNageib/Embedded_Linux/assets/151030617/a2d293e1-d4be-4cd2-9d8d-605330f8de8e)
 
 
-********************************************* **THE END**********************************************************
+*********************************************** **THE END**********************************************************
