@@ -262,7 +262,10 @@ you instead of the headache of writing directories of includes and libraries eac
 
 ![image](https://github.com/NourNageib/Embedded_Linux/assets/151030617/180af18f-4a21-463d-a77d-ad99b14b8170)
 
-by "Figure 2"
+by 
+
+"Figure 2"
+
 ![image](https://github.com/NourNageib/Embedded_Linux/assets/151030617/5d2ba090-aa9f-4918-b7e7-f3a00c70240f)
 
 
@@ -369,6 +372,20 @@ echo $LD_LIBRARY_PATH
 **Method 2 :**
 
 you add Your **lib(Libname).so** to **/usr/lib** directory to be found by system Loader once user run this application :
+
+```bash
+sudo cp liboperations.so /usr/lib
+```
+```bash
+ls liboperations.so 
+```
+
+![Screenshot from 2024-01-30 19-40-48](https://github.com/NourNageib/Embedded_Linux/assets/151030617/7f551151-d5ed-484d-a6ae-7bf1eed37a2d)
+
+
+![Screenshot from 2024-01-30 19-37-51](https://github.com/NourNageib/Embedded_Linux/assets/151030617/5e6bccad-bed5-4a41-b279-8e7ed76421cc)
+
+
 
 
 
