@@ -9,8 +9,13 @@ In fact, " YOCTO is not an embedded Linux distribution, it creates its own.”
 //
 
 
+![YP_Featured-Image](https://github.com/NourNageib/Embedded_Linux/assets/151030617/46ec3b75-59af-4323-9353-2f0c4876f011)
 
 
+![Screenshot from 2024-03-03 12-46-42](https://github.com/NourNageib/Embedded_Linux/assets/151030617/80b2c22e-615d-4eb9-ab8e-acdf7b7c14fc)
+
+
+![Screenshot from 2024-03-04 09-06-31](https://github.com/NourNageib/Embedded_Linux/assets/151030617/bc646bcf-4439-42bb-a3ec-eab377fca0e4)
 
 
 
@@ -37,9 +42,10 @@ In fact, " YOCTO is not an embedded Linux distribution, it creates its own.”
 
 ----------
 
-///////////////////
+![Screenshot from 2024-03-04 09-04-19](https://github.com/NourNageib/Embedded_Linux/assets/151030617/ad5e52e1-efdf-4375-88ea-ccc1401158d5)
 
 
+--------------------
 
 ### 🔹Poky :
 
@@ -87,7 +93,8 @@ Thus , poky as a reference distribution relies on OpenEmbedded build system to a
 
 Yocto layers provide a modular and flexible way to organize and manage  customizations and additions to the Yocto Project. Each layer can  contain recipes for building specific software packages, configuration  files, and other resources.
 
-////
+![Screenshot from 2024-03-05 03-37-33](https://github.com/NourNageib/Embedded_Linux/assets/151030617/ac7efab5-90b1-4007-80ee-b498b4493db0)
+
 
 ### 🔹Recipe:
 
@@ -118,6 +125,8 @@ Configuration files define settings and parameters that control how the  Yocto b
 find . -type f -name "*.conf" 2>/dev/null | sed 's|^|./|; s|[^/]*/|── |g'
 
 ```
+![Screenshot from 2024-03-03 16-55-04](https://github.com/NourNageib/Embedded_Linux/assets/151030617/3ecb8a30-dd94-45f1-97a6-e811e8fe9614)
+
 
 ### 🔹**Packages**:
 
@@ -160,8 +169,6 @@ In the Yocto Project, an image refers to the complete software stack that will b
 mkdir yocto && cd yocto
 ```
 
-////
-
 ### 2 -  Clone YOCTO :
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -175,14 +182,14 @@ git clone -b dunfell https://git.yoctoproject.org/git/poky.git
 cd poky
 ```
 
+![Screenshot from 2024-03-05 06-06-48](https://github.com/NourNageib/Embedded_Linux/assets/151030617/14e4676b-96db-484e-992a-b84e99d4670e)
+
 **Here, lets differentiate between :**
 
 - Dunfell is version 3.1 of the Yocto Project, released in June 2020.
 - Kirkstone is version 3.2 of the Yocto Project, released in October 2020.
 
 Each release represents a progression in the development of the Yocto Project, with Kirkstone being a newer version compared to Dunfell. Kirkstone likely includes updates, enhancements, and possibly new features compared to Dunfell, reflecting ongoing development efforts within the Yocto Project community.
-
-/////
 
 
 
@@ -213,6 +220,9 @@ source oe-init-build-env build
 
 Automatically, you will be switched to your build directory.
 
+![Screenshot from 2024-03-05 06-09-03](https://github.com/NourNageib/Embedded_Linux/assets/151030617/742795cd-0709-4626-895d-80797fcca10b)
+
+
 ```bash
 # change directory to conf
 cd conf
@@ -224,6 +234,8 @@ cd conf
 # edit the file local.conf
 nano local.conf
 ```
+![Screenshot from 2024-03-05 06-10-38](https://github.com/NourNageib/Embedded_Linux/assets/151030617/04879b60-e1de-4d6a-9d9f-27aac8c413a9)
+
 
 a - Comment Default machine -> Qemu 
 
@@ -232,6 +244,9 @@ a - Comment Default machine -> Qemu
 ```bash
 #MACHINE ??= "qemux86-64"
 ```
+![Screenshot from 2024-03-03 18-03-58](https://github.com/NourNageib/Embedded_Linux/assets/151030617/4e9729c1-4849-4e50-9722-db4534b5f6b7)
+
+
 
 b - Un-Coomment Machine -> Beaglebone
 
@@ -241,12 +256,18 @@ b - Un-Coomment Machine -> Beaglebone
 MACHINE ?= "beaglebone-yocto"
 ```
 
+![Screenshot from 2024-03-03 18-04-13](https://github.com/NourNageib/Embedded_Linux/assets/151030617/6438e247-a512-4ed7-a884-099a031bcbe2)
+
+
+
 c -  ${TOPDIR} -> replace this value with your absolute home directory to yocto :
 
 ```bash
 ##DL_DIR ?= "${TOPDIR}/downloads"
 DL_DIR ?= "/home/nour/yocto/downloads"
 ```
+![Screenshot from 2024-03-03 18-14-00](https://github.com/NourNageib/Embedded_Linux/assets/151030617/d2c99b9a-2420-4af9-bb5a-eea0689a2b72)
+
 
 To set the download directory.
 
@@ -258,6 +279,9 @@ d - ${TOPDIR} => same as previous step
 #SSTATE_DIR ?= "${TOPDIR}/state-cache"
 SSTATE_DIR ?= "/home/nour/yocto/sstate-cache"
 ```
+
+![Screenshot from 2024-03-03 19-02-58](https://github.com/NourNageib/Embedded_Linux/assets/151030617/a3957047-31b9-4ce3-a261-a05dabaca08a)
+
 
 Here, we specify location directory for shared state cache  of your yocto project environment                                                                               **shared state cache** => This is used by yocto to improve system performance by reusing immediate build arifacts  across multiple builds.
 
@@ -322,6 +346,7 @@ This Command build the `core-image-minimal` image recipe using build tool => BIT
 * **`core-image-minimal`** => Its is an image recipe provided by yocto organization to build minimalistic linux distribution example  
 
 
+![Screenshot from 2024-03-04 08-12-08](https://github.com/NourNageib/Embedded_Linux/assets/151030617/5cfd66d2-260c-4366-b1ca-fd3a913dbeed)
 
 
 
@@ -332,8 +357,6 @@ This Command build the `core-image-minimal` image recipe using build tool => BIT
  **♦️  problem 1 :**
 
   While, running `bitbake -k core-image-minimal` => **error bitbake: command not found !**
-
-   ////////////////
 
   path of bitbake executable is not appended to PATH system variable.
 
@@ -354,8 +377,13 @@ echo 'export PATH="/home/nour/Nour/yocto/poky/bitbake/bin:$PATH"' >> ~/.bashrc
  # To ensure it appended
  echo $PATH
 ```
+![Screenshot from 2024-03-04 06-26-04](https://github.com/NourNageib/Embedded_Linux/assets/151030617/e223ed5f-7c95-4e17-979b-8bfa14cb0311)
 
- 
+![Screenshot from 2024-03-04 06-24-47](https://github.com/NourNageib/Embedded_Linux/assets/151030617/e0959cc4-0e09-4bfe-b113-3b110f6a9300)
+
+ ![Screenshot from 2024-03-04 06-27-13](https://github.com/NourNageib/Embedded_Linux/assets/151030617/2e5e1a4f-62fb-42cf-a7c2-a25ce9be8c38)
+
+
 
 **♦️  problem 2 :**
 
@@ -363,6 +391,8 @@ echo 'export PATH="/home/nour/Nour/yocto/poky/bitbake/bin:$PATH"' >> ~/.bashrc
 #ERROR: The following required tools (as specified by HOSTTOOLS) appear to be unavailable in #PATH, please install them in order to proceed:
 #chrpath diffstat lz4c
 ```
+![Screenshot from 2024-03-04 06-29-06](https://github.com/NourNageib/Embedded_Linux/assets/151030617/2c0887d6-7758-4de7-a309-99ac77e565ae)
+
 
 This error bec, certain tools required for the Yocto Project build process are missing from your system's PATH.
 
@@ -375,9 +405,15 @@ sudo apt update
 sudo apt install chrpath diffstat liblz4-tool
 ```
 
+![Screenshot from 2024-03-04 06-29-12](https://github.com/NourNageib/Embedded_Linux/assets/151030617/024b859f-05a7-431b-833b-86c7361a8004)
+
+
 ​                                      **NOW YOU CAN BUILD THE MINIMAL YOCTO IMAGE RECIPE**
 
-///////
+
+![Screenshot from 2024-03-04 06-31-03](https://github.com/NourNageib/Embedded_Linux/assets/151030617/fb5c6373-240e-4e03-b39e-4c1947fc5239)
+
+
 
 ---------------------
 
@@ -389,9 +425,8 @@ sudo apt install chrpath diffstat liblz4-tool
 
 -----------
 
-//////////////////////
+![Screenshot from 2024-03-04 20-26-11](https://github.com/NourNageib/Embedded_Linux/assets/151030617/4a3c6951-a1c1-4d29-ae9d-bbfe1fb2d2f7)
 
-////////
 
 ```bash
 #bitbake-layers add-layer /home/abs/path/to/your/layer/
@@ -412,6 +447,13 @@ bitbake-layers show-layers
 **Because** , that's where **bitbake** expects to find the metadata and configuration files necessary for the build process. Besides, by running **bitbake** commands within the build directory, it ensures that  the build environment is isolated from other parts of the Yocto project. This helps prevent conflicts and ensures that **bitbake** operates within a controlled environment.
 
 ----------------
+
+![Screenshot from 2024-03-04 20-27-02](https://github.com/NourNageib/Embedded_Linux/assets/151030617/0a6fb295-c820-44b5-bd64-200b8c7b7e8c)
+
+
+![Screenshot from 2024-03-04 20-27-31](https://github.com/NourNageib/Embedded_Linux/assets/151030617/ade88c4b-0627-4be1-bc5c-e4fa07e3acfa)
+
+----------
 
 
 
@@ -531,11 +573,25 @@ bitbake -s
 # bitbake myrecipee_0.1.bb ❌ 
 bitbake myrecipee
 ```
+![Screenshot from 2024-03-04 20-48-01](https://github.com/NourNageib/Embedded_Linux/assets/151030617/8a6954df-0e71-4894-8106-da5e8cf6b943)
+
+
+![Screenshot from 2024-03-05 04-27-53](https://github.com/NourNageib/Embedded_Linux/assets/151030617/75458c06-8f69-4f36-8acb-de2c8d61aa32)
+
+![Screenshot from 2024-03-05 04-31-38](https://github.com/NourNageib/Embedded_Linux/assets/151030617/94ef84fd-ae7d-4473-babf-b1b4881054e2)
+
+
 
 ​                          **Once run congratulations 😉 you now have a customized recipe** 
 
-///
 
+![Screenshot from 2024-03-05 04-12-42](https://github.com/NourNageib/Embedded_Linux/assets/151030617/6a249e4f-3e44-4c1b-bfa5-027822343033)
+
+
+![Screenshot from 2024-03-05 06-23-34](https://github.com/NourNageib/Embedded_Linux/assets/151030617/3808eda9-7bfb-49b8-90e4-70fde89e8b44)
+
+
+![Screenshot from 2024-03-05 04-27-39](https://github.com/NourNageib/Embedded_Linux/assets/151030617/d9531c23-2da3-4bb1-8efe-94163312647e)
 
 
 --------------
