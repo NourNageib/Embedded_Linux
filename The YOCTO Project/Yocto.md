@@ -6,7 +6,6 @@ In fact, " YOCTO is not an embedded Linux distribution, it creates its own.”
 
 > **“Ubuntu as a tool can be categorized under Operating Systems, while Yocto is categorised under                    Infrastructure Build Tools.”**
 
-//
 
 
 ![YP_Featured-Image](https://github.com/NourNageib/Embedded_Linux/assets/151030617/46ec3b75-59af-4323-9353-2f0c4876f011)
@@ -582,7 +581,10 @@ bitbake myrecipee
 
 
 
-​                          **Once run congratulations 😉 you now have a customized recipe** 
+
+​                             **Once run congratulations 😉 you now have a customized recipe** 
+
+
 
 
 ![Screenshot from 2024-03-05 04-12-42](https://github.com/NourNageib/Embedded_Linux/assets/151030617/6a249e4f-3e44-4c1b-bfa5-027822343033)
