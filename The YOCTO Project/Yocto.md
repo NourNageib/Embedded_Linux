@@ -263,7 +263,7 @@ c -  ${TOPDIR} -> replace this value with your absolute home directory to yocto 
 
 ```bash
 ##DL_DIR ?= "${TOPDIR}/downloads"
-DL_DIR ?= "/home/nour/yocto/downloads"
+DL_DIR ?= "/home/nour/Nour/yocto/downloads"
 ```
 ![Screenshot from 2024-03-03 18-14-00](https://github.com/NourNageib/Embedded_Linux/assets/151030617/d2c99b9a-2420-4af9-bb5a-eea0689a2b72)
 
@@ -276,7 +276,7 @@ d - ${TOPDIR} => same as previous step
 
 ```bash
 #SSTATE_DIR ?= "${TOPDIR}/state-cache"
-SSTATE_DIR ?= "/home/nour/yocto/sstate-cache"
+SSTATE_DIR ?= "/home/nour/Nour/yocto/sstate-cache"
 ```
 
 ![Screenshot from 2024-03-03 19-02-58](https://github.com/NourNageib/Embedded_Linux/assets/151030617/a3957047-31b9-4ce3-a261-a05dabaca08a)
